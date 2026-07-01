@@ -5,7 +5,7 @@ import { expect, test } from "@playwright/test";
 // must have a passing spec like this before it's considered done.
 test.describe("_template topic page", () => {
   test("shows a title, at least one infographic, and a numbered source list", async ({ page }) => {
-    await page.goto("/");
+    await page.goto("/?topic=_template");
 
     await expect(page.locator("h1")).toBeVisible();
     await expect(page.locator(".infographic")).toHaveCount(1);
@@ -13,7 +13,7 @@ test.describe("_template topic page", () => {
   });
 
   test("every infographic caption's footnote link resolves to a listed source", async ({ page }) => {
-    await page.goto("/");
+    await page.goto("/?topic=_template");
 
     const footnoteLinks = page.locator(".infographic sup a");
     const count = await footnoteLinks.count();

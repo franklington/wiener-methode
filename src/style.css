@@ -35,6 +35,33 @@ body {
   font-size: 0.95rem;
 }
 
+.pictogram-label {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.timeline {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.timeline li {
+  margin: 0.35rem 0;
+}
+
+.timeline-year {
+  font-weight: 600;
+  margin-right: 0.35rem;
+}
+
+.brand-list {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+  columns: 2;
+  font-size: 0.9rem;
+}
+
 .sources {
   margin-top: 3rem;
   border-top: 1px solid #ddd;
