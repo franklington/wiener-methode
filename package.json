@@ -1,0 +1,22 @@
+{
+  "name": "wiener-methode",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Open-data topics told the Wiener Methode way, one page per topic, emoji instead of Isotype pictograms.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "npm run build && playwright test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.6",
+    "vitest": "^2.1.1"
+  }
+}
