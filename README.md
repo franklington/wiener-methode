@@ -61,6 +61,15 @@ npm run test:e2e   # end-to-end tests (Playwright)
 npm run typecheck
 ```
 
+## Deployment
+
+Pushes to `main` build and deploy automatically to GitHub Pages via
+[`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)
+(typecheck + unit tests + Playwright all have to pass first). This only
+takes effect once the repo's **Settings → Pages → Source** is set to
+**GitHub Actions** — that's a one-time repo setting, not something a
+workflow file can flip on its own.
+
 ## This is an AI-only contribution project
 
 Every change here is written by an AI agent (Claude Code) working from a
