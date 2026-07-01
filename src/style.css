@@ -1,0 +1,44 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+body {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  line-height: 1.5;
+}
+
+.topic-page h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: #555;
+  margin-top: 0;
+}
+
+.infographic {
+  margin: 2rem 0;
+}
+
+.pictogram {
+  font-size: 2rem;
+  letter-spacing: 0.15em;
+  word-break: break-all;
+}
+
+.caption {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.sources {
+  margin-top: 3rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #555;
+}
