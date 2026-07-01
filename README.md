@@ -63,12 +63,22 @@ npm run typecheck
 
 ## Deployment
 
-Pushes to `main` build and deploy automatically to GitHub Pages via
-[`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)
-(typecheck + unit tests + Playwright all have to pass first). This only
-takes effect once the repo's **Settings → Pages → Source** is set to
-**GitHub Actions** — that's a one-time repo setting, not something a
-workflow file can flip on its own.
+Hosting is [Cloudflare Pages](https://pages.cloudflare.com), connected
+directly to this GitHub repo from the Cloudflare dashboard (that
+connection is a one-time step only an account owner can do — not
+something a config file in this repo can set up). Once connected, use:
+
+- **Build command:** `npm run build`
+- **Build output directory:** `dist`
+
+Cloudflare then builds every push to `main` as the production deployment
+and every pull request as its own preview URL automatically — no extra
+workflow needed for that part.
+
+[`.github/workflows/ci.yml`](.github/workflows/ci.yml) separately runs
+typecheck, unit tests, and Playwright on every push and pull request, so a
+broken change fails CI independently of whether Cloudflare's build
+happens to succeed.
 
 ## This is an AI-only contribution project
 
