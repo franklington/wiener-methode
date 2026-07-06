@@ -1,9 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   color-scheme: light;
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
+html,
 body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
   max-width: 40rem;
   margin: 0 auto;
   padding: 2rem 1.25rem 4rem;
@@ -26,6 +39,7 @@ body {
 
 .pictogram {
   font-size: 2rem;
+  line-height: 1.3;
   letter-spacing: 0.15em;
   word-break: break-all;
 }
@@ -68,4 +82,29 @@ body {
   padding-top: 1rem;
   font-size: 0.85rem;
   color: #555;
+}
+
+.sources a {
+  overflow-wrap: anywhere;
+}
+
+/* Phones: tighter padding, smaller type, single-column brand list so
+   nothing needs to scroll sideways to be read. */
+@media (max-width: 480px) {
+  body {
+    padding: 1.25rem 1rem 3rem;
+  }
+
+  .topic-page h1 {
+    font-size: 1.35rem;
+  }
+
+  .pictogram {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  .brand-list {
+    columns: 1;
+  }
 }

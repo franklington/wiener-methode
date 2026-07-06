@@ -3,11 +3,15 @@ import { sources } from "./sources";
 import { renderOldGuardTimeline } from "./units/old-guard-timeline";
 import { renderOldGuardVolumes } from "./units/old-guard-volumes";
 import { renderHeadlineShare } from "./units/headline-share";
+import { renderEvTrendComparison } from "./units/ev-trend-comparison";
 import { renderBrandRoster } from "./units/brand-roster";
 import { renderEntryTimeline } from "./units/entry-timeline";
 import { renderCountryContrast } from "./units/country-contrast";
+import { renderScaleRealityCheck } from "./units/scale-reality-check";
 import { renderBydHistory } from "./units/byd-history";
 import { renderOvercapacity } from "./units/overcapacity";
+import { renderPriceGap } from "./units/price-gap";
+import { renderSpeedToMarket } from "./units/speed-to-market";
 import { renderEuTariffs } from "./units/eu-tariffs";
 import { renderSupplierFallout } from "./units/supplier-fallout";
 import { renderLocalProduction } from "./units/local-production";
@@ -24,12 +28,16 @@ export const chineseCarsInEuropeTopic: Topic = {
     { render: renderOldGuardVolumes },
     // Act 2 - the shift, in numbers
     { render: renderHeadlineShare },
+    { render: renderEvTrendComparison },
     { render: renderBrandRoster },
     { render: renderEntryTimeline },
     { render: renderCountryContrast },
+    { render: renderScaleRealityCheck },
     // Act 3 - why now (mirrors act 1's causal structure)
     { render: renderBydHistory },
     { render: renderOvercapacity },
+    { render: renderPriceGap },
+    { render: renderSpeedToMarket },
     // Act 4 - Europe's response, and the twist ending
     { render: renderEuTariffs },
     { render: renderSupplierFallout },

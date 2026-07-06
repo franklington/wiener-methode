@@ -142,4 +142,36 @@ export const sources: Source[] = [
     url: "https://en.wikipedia.org/wiki/Geely",
     retrieved: "2026-07-01",
   },
+  // Added afterwards, appended rather than reordered so sources 1-23
+  // above keep the footnote numbers already used in units/*.ts.
+  {
+    id: "acea-full-year-2025",
+    label: "ACEA (European Automobile Manufacturers' Association), \"New car registrations: +1.8% in 2025; battery-electric 17.4% market share\"",
+    url: "https://www.acea.auto/pc-registrations/new-car-registrations-1-8-in-2025-battery-electric-17-4-market-share/",
+    retrieved: "2026-07-01",
+  },
+  {
+    id: "eurostat-road-eqr-carpda",
+    label: "Eurostat, \"New passenger cars by type of motor energy\" (road_eqr_carpda), open dataset",
+    url: "https://ec.europa.eu/eurostat/databrowser/view/ROAD_EQR_CARPDA/",
+    retrieved: "2026-07-01",
+  },
+  {
+    id: "eprs-chinese-ev-price-gap",
+    label: "European Parliament Research Service, \"EU anti-subsidy probe into electric vehicle imports from China\"",
+    url: "https://www.europarl.europa.eu/RegData/etudes/ATAG/2023/754553/EPRS_ATA(2023)754553_EN.pdf",
+    retrieved: "2026-07-01",
+  },
+  {
+    id: "rhg-chinese-cars-europe-trend",
+    label: "Rhodium Group, \"Don't Stop Me Now: Chinese Cars Are Having a Good Time in Europe\"",
+    url: "https://rhg.com/research/dont-stop-me-now-chinese-cars-are-having-a-good-time-in-europe/",
+    retrieved: "2026-07-01",
+  },
+  {
+    id: "alixpartners-speed-outlook",
+    label: "AlixPartners, \"2025 Global Automotive Outlook: China's 'New Operating Model'\"",
+    url: "https://www.alixpartners.com/newsroom/2025-alixpartners-global-automotive-outlook-china/",
+    retrieved: "2026-07-01",
+  },
 ];

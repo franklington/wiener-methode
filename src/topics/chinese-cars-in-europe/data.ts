@@ -61,6 +61,29 @@ export const overcapacity = {
   survivorsSourceId: "cnn-price-war",
 };
 
+export const evTrendComparison = {
+  early: { year: "June 2022", percent: 5.5, sourceId: "rhg-chinese-cars-europe-trend" },
+  later: { year: "June 2024", percent: 11.1, sourceId: "rhg-chinese-cars-europe-trend" },
+};
+
+export const scaleRealityCheck = {
+  vwGroup: { registrations: 3_570_000, sourceId: "acea-full-year-2025" },
+  chineseBrands: { registrations: 1_300_000, sourceId: "acea-full-year-2025" },
+  totalMarket: { registrations: 13_271_270, sourceId: "eurostat-road-eqr-carpda" },
+};
+
+export const priceGap = {
+  chineseAvgEuro: 25_200,
+  overallAvgEuro: 30_200,
+  sourceId: "eprs-chinese-ev-price-gap",
+};
+
+export const speedToMarket = {
+  chineseModelAgeYears: 1.6,
+  foreignModelAgeYears: 5.4,
+  sourceId: "alixpartners-speed-outlook",
+};
+
 export const euTariffs = [
   { name: "BYD", percent: 17.4, sourceId: "eu-access2markets-tariffs" },
   { name: "Geely", percent: 19.9, sourceId: "eu-access2markets-tariffs" },
